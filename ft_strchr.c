@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/23 22:27:14 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 18:15:43 by lauferna         ###   ########.fr       */
+/*   Created: 2025/09/24 20:23:00 by lauferna          #+#    #+#             */
+/*   Updated: 2025/09/24 20:34:57 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	c;
-
-	c = 0;
-	while (*s != '\0')
+	while (*s)
 	{
-		c++;
+		if (*s == c)
+			return ((char *) s);
 		s++;
 	}
-	return (c);
+	if (c == '\0')
+		return ((char *) s);
+	return (NULL);
 }

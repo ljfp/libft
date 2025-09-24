@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/23 22:27:14 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 18:15:43 by lauferna         ###   ########.fr       */
+/*   Created: 2025/09/24 20:17:15 by lauferna          #+#    #+#             */
+/*   Updated: 2025/09/24 20:20:52 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+static int	ft_isupper(int c)
 {
-	size_t	c;
+	return (c >= 65 && c <= 90);
+}
 
-	c = 0;
-	while (*s != '\0')
-	{
-		c++;
-		s++;
-	}
+int	ft_toupper(int c)
+{
+	if (ft_isupper(c) == 1)
+		return (c + 32);
 	return (c);
 }
