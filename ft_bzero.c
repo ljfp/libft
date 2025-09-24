@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/23 21:40:01 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 16:22:59 by lauferna         ###   ########.fr       */
+/*   Created: 2025/09/24 16:22:31 by lauferna          #+#    #+#             */
+/*   Updated: 2025/09/24 16:28:55 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+void	bzero(void *s, size_t n)
+{
+	size_t			i;
+	unsigned char	*p;
 
-// Part 1
-
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(char *s);
-void	*ft_memset(void *s, int c, size_t n);
-void	bzero(void *s, size_t n);
-
-#endif /* LIBFT_H */
+	i = 0;
+	p = (unsigned char *)s;
+	while (i < n)
+	{
+		p[i] = '\0';
+		i++;
+	}
+}

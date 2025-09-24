@@ -6,13 +6,13 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 22:13:53 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/23 22:18:39 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/23 22:56:27 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
