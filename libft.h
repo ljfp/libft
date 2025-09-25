@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 21:40:01 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/25 23:16:14 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/26 01:37:02 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,16 @@ void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 
 // Part 2
-// TODO
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif /* LIBFT_H */
