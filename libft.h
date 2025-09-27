@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 21:40:01 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/26 01:37:02 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/27 17:19:35 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h> // We need this for size_t
 # include <stdlib.h> // We need this for malloc()
 # include <stdint.h> // We need this for SIZE_MAX
+# include <unistd.h> // We need this for write()
 
 // Part 1
 int		ft_isalpha(int c);
