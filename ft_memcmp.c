@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 20:56:20 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 21:02:54 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/27 19:24:33 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		if (p1[i] != p2[i])
 			return (p1[i] - p2[i]);
+		i++;
 	}
 	return (0);
 }

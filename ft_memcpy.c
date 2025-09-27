@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:39:08 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 18:18:24 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/27 19:42:13 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*p1;
 	unsigned char	*p2;
 
+	if (!dst && !src && n > 0)
+		return (NULL);
 	p1 = (unsigned char *) dst;
 	p2 = (unsigned char *) src;
 	i = 0;

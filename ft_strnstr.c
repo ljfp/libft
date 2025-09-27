@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 21:04:05 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 21:12:18 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/27 19:25:49 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			j++;
 		if (!little[j])
 			return ((char *)(big + i));
+		i = i + j + 1;
 	}
 	return (NULL);
 }
