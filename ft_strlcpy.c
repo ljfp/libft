@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 17:55:23 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/24 18:19:05 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/27 18:38:20 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	if (size == 0)
 		return (ft_strlen(src));
 	i = 0;
-	while (i < size -1 && src[i] != '\0')
+	while (i < size - 1 && i < ft_strlen(dst) - 1 && src[i] != '\0')
 	{
 		dst[i] = src[i];
 		i++;
