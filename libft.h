@@ -6,7 +6,7 @@
 /*   By: lauferna <ljfp@ljfp.xyz>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 21:40:01 by lauferna          #+#    #+#             */
-/*   Updated: 2025/09/27 18:01:17 by lauferna         ###   ########.fr       */
+/*   Updated: 2025/09/27 18:11:22 by lauferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	ft_putnbr_fd(int n, int fd);
 // Bonus
 typedef struct s_list
 {
-	void			*context;
+	void			*content;
 	struct s_list	*next;
 }	t_list;
 t_list	*ft_lstnew(void *content);
